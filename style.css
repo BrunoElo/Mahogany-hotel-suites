@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+   
+}
+
+#navbar {
+background-color: #C09F80;
+position: sticky;
+width: 100%;
+}
+
+#navbar ul {
+display: flex;
+justify-content: flex-end;
+margin: 0px; 
+list-style-type: none;
+padding: 20px 78px;
+}
+
+
+
+#navbar ul li {
+   padding: 0px 22px;
+}
+
+#navbar ul a {
+    text-decoration: none;
+    color: #565656;
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    font-size: 1.4vw;
+    white-space: nowrap;
+}
+
+.homebackground {
+    /*max-width: 100%;
+    height: auto;*/
+     background-image: url(images/Bgd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 257px;
+    padding-bottom: 210px;
+}
+
+.hotelname {
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    font-size: 4em;
+    color: #D7CEC7;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.subname {
+    font-family: Source Serif Pro;
+    font-weight: normal;
+    font-size: 34px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0px;
+}
+
+.intro {
+    font-family: Source Sans Pro;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 47px;
+}
+
+.bookbtn {
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+}
+
+#bknow {
+    height: 60px;
+    width: 150px;
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    font-size: 20px;
+    background: #C09F80;
+    color: #FFFFFF;
+}
+
+  #explore {
+    height: 60px;
+    width: 150px;
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    font-size: 20px;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    color: #E5E5E5;
+    background: transparent;
+}
+
+.suites {
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    font-size: 34px;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 2px solid #565656;
+    width: 80%;
+}
+/*implement later*/
+.carousel {
+    margin: 20px 100px;
+    border: 1px solid black;
+    height: 600px;
+}
+
+.slider {
+    display: block;
+    text-align: center;
+    margin: auto;
+   width: 1000px;
+}
+/*implement later*/
+
+.specialfeat {
+   padding-top: 20px;
+   display: flex;
+   justify-content: space-evenly;
+   margin: 0 auto;
+}
+
+.specialfeatchild {
+width: 300px;
+height: 400px;
+background: rgba(0, 0, 0, 0.54);
+}
+
+.feat {
+    padding-top: 10px;
+    background-color: #D7CEC7;
+    padding-bottom: 18px;
+}
+
+.feat #bknow {
+    display: block;
+    margin: 34px auto;
+}
+
+.specialfeatchild img {
+    width: 100%;
+}
+
+.specialfeatchild span {
+    font-family: Source Sans Pro;
+    color: #D7CEC7;
+    text-align: center;
+    padding:  10px;
+    display: block;
+}
+
+.specialfeatchild h3 {
+position: relative;
+color: #D7CEC7;
+font-family: Source Serif Pro;
+font-weight: bold;
+font-size: 24px;
+text-align: center;
+height: 0;
+margin: 0;
+top: 150px;
+}
+
+.contactintro {
+    font-family: Source Sans Pro;
+    text-align: center;
+    color:black;
+    margin-bottom: 20px;
+}
+
+.formcontainer {
+    margin: auto;
+    width: 492px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontainer [for="subscribe"] {
+    font-family: Source Sans Pro;
+    color:black;
+    margin-bottom: 47px;
+    font-size: 14px;
+}
+
+.inputstyle {
+    width: 100%;
+    height: 40px;
+    border: 2px solid #565656;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 8px;
+}
+
+#feedback {
+    height: 100px;
+}
+
+#subscribe {
+    display: inline;
+}
+
+.formcontainer #bknow {
+    display: block;
+    margin: 34px auto;
+}
+
+footer {
+    background-color: #565656;
+    color: #D7CEC7;
+    font-family: Source Sans Pro;
+}
+
+footer h2 {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 0;
+    font-family: Source Serif Pro;
+}
+
+footer ul a {
+    text-decoration: none;
+    font-family: Source Sans Pro;
+    color: #D7CEC7;
+}
+footer ul {
+    list-style-type: none;
+}
+
+footer hr {
+    border: 2px solid #D7CEC7;
+    width: 80%;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-around;
+}
+
+.summary {
+    width: 500px;
+    text-align: right;
+}
+
+svg {
+    width: 22px;
+    height: 22px;
+    fill: #D7CEC7;
+    display: inline-block;
+}
+ #igicon {
+     fill: 
+}
+
+.footerfoot {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+margin: auto;
+}
+
+@media screen and (max-width:750px) {
+    #navbar ul {
+        display: flex;
+        justify-content: center;
+        padding: 20px 58px ;
+        }
+        #navbar ul a {
+        font-size: 1.8vw;
+        }
+        #navbar ul li {
+            padding: 0px 14px;
+        }
+        .formcontainer {
+            width: 70vw;
+        }
+        .contactintro {
+            width: 80%;
+            margin: auto;
+        }
+}
+
+@media screen and (max-width:1000px) {
+.specialfeat {
+            flex-wrap: wrap;
+        }
+        .specialfeatchild {
+margin-top: 20px;
+        }
+        
+}
