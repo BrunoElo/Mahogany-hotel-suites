@@ -7,7 +7,7 @@ body {
 
 #navbar {
 background-color: #C09F80;
-position: sticky;
+position: fixed;
 width: 100%;
 }
 
@@ -19,12 +19,6 @@ list-style-type: none;
 padding: 20px 78px;
 }
 
-
-
-#navbar ul li {
-   padding: 0px 22px;
-}
-
 #navbar ul a {
     text-decoration: none;
     color: #565656;
@@ -32,6 +26,12 @@ padding: 20px 78px;
     font-weight: bold;
     font-size: 1.4vw;
     white-space: nowrap;
+    padding: 20px;
+}
+
+#navbar ul a:hover {
+background-color: #565656;
+color: #D7CEC7;
 }
 
 .homebackground {
@@ -72,7 +72,8 @@ padding: 20px 78px;
 .bookbtn {
       margin: auto;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
+      
 }
 
 #bknow {
@@ -83,7 +84,13 @@ padding: 20px 78px;
     font-size: 20px;
     background: #C09F80;
     color: #FFFFFF;
+    margin-right: 2%;
+    border: none;
 }
+
+#bknow:hover {
+    background-color: #565656;
+    }
 
   #explore {
     height: 60px;
@@ -92,10 +99,17 @@ padding: 20px 78px;
     font-weight: bold;
     font-size: 20px;
     border: 3px solid #FFFFFF;
-    box-sizing: border-box;
+    
     color: #E5E5E5;
     background: transparent;
+    margin-left: 2%;
 }
+
+#explore:hover {
+    background-color: #C09F80;
+    color: #565656;
+    }
+
 
 .suites {
     font-family: Source Sans Pro;
@@ -243,6 +257,7 @@ footer ul a {
 }
 footer ul {
     list-style-type: none;
+    padding: 0px;
 }
 
 footer hr {
@@ -253,6 +268,7 @@ footer hr {
 .foot {
     display: flex;
     justify-content: space-around;
+    margin: 30px;
 }
 
 .summary {
@@ -266,9 +282,6 @@ svg {
     fill: #D7CEC7;
     display: inline-block;
 }
- #igicon {
-     fill: 
-}
 
 .footerfoot {
     display: flex;
@@ -276,7 +289,12 @@ svg {
     width: 80%;
 margin: auto;
 }
-
+#check {
+            display: none;
+        }
+.checkbtn {
+    display: none;
+}
 @media screen and (max-width:750px) {
     #navbar ul {
         display: flex;
@@ -284,7 +302,8 @@ margin: auto;
         padding: 20px 58px ;
         }
         #navbar ul a {
-        font-size: 1.8vw;
+        font-size: 16px;
+        padding: 5px;
         }
         #navbar ul li {
             padding: 0px 14px;
@@ -295,6 +314,34 @@ margin: auto;
         .contactintro {
             width: 80%;
             margin: auto;
+        }
+        .checkbtn {
+            width: 30px;
+            height: 30px;
+            fill: #D7CEC7;
+            position: relative;        
+            cursor: pointer;
+            margin-top: 7px;
+            margin-right: 7px;
+            display: initial;
+            right: 10px;
+            position: fixed;
+        }
+        #check:checked ~ ul {                 
+            display: none;    
+            transition: all .5s ease;
+        }
+        #navbar ul {    
+    
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        #navbar li  {
+            margin: 5px;
+        }
+        .summary {
+            display: none;
         }
 }
 
