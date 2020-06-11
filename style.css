@@ -5,6 +5,8 @@ body {
    
 }
 
+/*landing page*/
+
 #navbar {
 background-color: #C09F80;
 position: fixed;
@@ -30,8 +32,8 @@ padding: 20px 78px;
 }
 
 #navbar ul a:hover {
-background-color: #565656;
-color: #D7CEC7;
+    background-color: #FFFFFF;
+    color: #C09F80;
 }
 
 .homebackground {
@@ -89,7 +91,8 @@ color: #D7CEC7;
 }
 
 #bknow:hover {
-    background-color: #565656;
+    background-color: #FFFFFF;
+    color: #C09F80;
     }
 
   #explore {
@@ -100,14 +103,14 @@ color: #D7CEC7;
     font-size: 20px;
     border: 3px solid #FFFFFF;
     
-    color: #E5E5E5;
+    color: #C09F80;
     background: transparent;
     margin-left: 2%;
 }
 
 #explore:hover {
-    background-color: #C09F80;
-    color: #565656;
+    background-color: #FFFFFF;
+    color: #C09F80;
     }
 
 
@@ -260,7 +263,7 @@ footer ul {
     padding: 0px;
 }
 
-footer hr {
+.hrlight {
     border: 2px solid #D7CEC7;
     width: 80%;
 }
@@ -353,4 +356,39 @@ margin: auto;
 margin-top: 20px;
         }
         
+}
+
+/*landing page*/
+
+/*the hotel*/
+.about {
+    background-color: #565656;
+    margin-bottom: 40px;
+}
+
+.about h1 {
+    margin-top: 0;
+    padding-top: 80px;
+    font-size: 34px;
+}
+
+.about .specialfeat {
+    margin: auto 100px;
+}
+
+.about .specialfeat span {
+    width:  500px;
+    color: #D7CEC7;
+    font-family: Source Sans Pro;
+    text-align: justify;
+}
+
+@media screen and (max-width:750px) {
+    .about .specialfeat span {
+        width:  80%;
+        margin-top: 20px;
+    }
+    .about .specialfeat {
+        margin: auto ;
+    }
 }
