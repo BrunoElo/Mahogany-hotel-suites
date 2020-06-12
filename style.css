@@ -79,7 +79,7 @@ padding: 20px 78px;
       
 }
 
-#bknow {
+.bknow {
     height: 60px;
     width: 150px;
     font-family: Source Sans Pro;
@@ -91,7 +91,7 @@ padding: 20px 78px;
     border: none;
 }
 
-#bknow:hover {
+.bknow:hover {
     background-color: #FFFFFF;
     color: #C09F80;
     }
@@ -184,7 +184,7 @@ background: rgba(0, 0, 0, 0.54);
     padding-bottom: 18px;
 }
 
-.feat #bknow {
+.feat .bknow {
     display: block;
     margin: 34px auto;
 }
@@ -252,7 +252,7 @@ top: 150px;
     display: inline;
 }
 
-.formcontainer #bknow {
+.formcontainer .bknow {
     display: block;
     margin: 34px auto;
 }
@@ -352,6 +352,7 @@ margin: auto;
             display: initial;
             right: 10px;
             position: fixed;
+            z-index: 3;
         }
         #check:checked ~ ul {                 
             display: none;    
