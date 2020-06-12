@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahogany Hotels & Suites</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -22,10 +22,9 @@
         </ul>
     </nav>
     <label for="check" class="checkbtn">
-        <?xml version="1.0" ?>
-        <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
-            enable-background="new 0 0 26 26" class="checkbtn" id="" version="1.1" viewBox="0 0 26 26"
-            xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <svg enable-background="new 0 0 26 26" class="checkbtn" version="1.1" viewBox="0 0 26 26" xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g>
                 <path
                     d="M24.25,12.25H1.75C1.3359375,12.25,1,12.5859375,1,13s0.3359375,0.75,0.75,0.75h22.5   c0.4140625,0,0.75-0.3359375,0.75-0.75S24.6640625,12.25,24.25,12.25z" />
@@ -47,8 +46,22 @@
     <h2 class="suites">SUITES</h2>
     <hr>
     <!--Carousel-->
-    <div class="carousel">
-        <img class="slider" name="slide" />
+    <div class="carousel-container">
+        <svg id="prevbtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+            <path
+                d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+        </svg>
+        <div class="carousel-slide">
+            <img id="lastClone" src="images/Rectangle 31.png" alt="street" />
+            <img src="images/Cusine.png" alt="man on boat" />
+            <img width="416px" src="images/Rectangle 14.png" alt="room" />
+            <img src="images/Rectangle 31.png" alt="street" />
+            <img id="firstClone" src="images/Cusine.png" alt="man on boat" />
+        </div>
+        <svg id="nextbtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+            <path
+                d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+        </svg>
     </div>
     <!--Carousel-->
     <div class="feat">
@@ -78,7 +91,7 @@
     <p class="contactintro">Do you have any questions or suggestions please give us a feedback.</p>
 
     <div class="formcontainer">
-        <form action="" method="POST">
+        <form method="POST">
             <div>
                 <input type="text" class="inputstyle" id="name" name="name" placeholder="Name">
             </div>
@@ -87,8 +100,7 @@
                     placeholder="email@something.com">
             </div>
             <div>
-                <textarea rows="5" class="inputstyle" type="text" id="feedback" name="feedback" value=""
-                    placeholder="Message"></textarea>
+                <textarea rows="5" class="inputstyle" id="feedback" name="feedback" placeholder="Message"></textarea>
             </div>
             <input type="checkbox" id="subscribe" name="subscribe" value="">
             <label for="subscribe">Subscribe to our newsletter</label>

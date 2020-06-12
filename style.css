@@ -11,6 +11,7 @@ body {
 background-color: #C09F80;
 position: fixed;
 width: 100%;
+z-index: 2;
 }
 
 #navbar ul {
@@ -128,17 +129,39 @@ hr {
     width: 80%;
 }
 /*implement later*/
-.carousel {
-    margin: 20px 100px;
-    border: 1px solid black;
-    height: 600px;
+.carousel-container {
+    width: 391px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
 }
 
-.slider {
-    display: block;
-    text-align: center;
-    margin: auto;
-   width: 1000px;
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+#prevbtn {
+  fill: white;
+  position: absolute; 
+  z-index: 1;
+  top: 20%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#nextbtn {
+    fill: white;
+  position: absolute; 
+  z-index: 1;
+  top: 20%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  right: 0;
 }
 /*implement later*/
 
@@ -345,6 +368,10 @@ margin: auto;
         }
         .summary {
             display: none;
+        }
+        .carousel-container {
+            width: 350px;
+          
         }
 }
 
